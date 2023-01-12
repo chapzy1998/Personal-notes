@@ -1,4 +1,4 @@
-#new Debian11.0 server
+new Debian11.0 server
 passwd
 adduser <username>
 apt update
@@ -7,4 +7,3 @@ apt install zip
 apt install git
 sudo usermod -aG sudo <username>
 dpkg-reconfigure locales (choose zh_CN.UTF-8 UTF-8)
-
