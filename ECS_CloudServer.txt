@@ -14,9 +14,22 @@ cp -r /etc/skel/. /home/<username>
 #/etc/profile
 alias la='LS -a'
 alias l='ls -CF'
-alias ll='ls -alF'
+alias ll='ls -al'
 
 #java
-wget https://download.oracle.com/java/19/latest/jdk-19_linux-x64_bin.deb
-dpkg -i <fileName>
-(if error)sudo apt --fix-broken install
+wget https://download.oracle.com/java/19/latest/jdk-19_linux-x64_bin.tar.gz
+mkdir /usr/java
+tar -xzvf <tarPackage> -C /usr/java
+vim /etc/profile
+export JAVA_HOME=/usr/java/jdk-19.0.1
+export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib
+export PATH=$JAVA_HOME/bin:$PATH
+source /etc/profile
+java -version
+
+#tomcat
+download tomcat10.tar.gz
+export PATH=$PATH:/home/silence/tomcat/apache-tomcat-10.0.27
+(then start startup.sh)
+access <ip>:8080 using web browser
+
