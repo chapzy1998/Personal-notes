@@ -7,4 +7,14 @@ apt install zip
 apt install git
 sudo usermod -aG sudo <username>
 dpkg-reconfigure locales (choose zh_CN.UTF-8 UTF-8)
+chmod 777 /home/<username>
+cp -r /etc/skel/. /home/<username>
+(then change .bashrc)
 
+#/etc/profile
+alias la='LS -a'
+alias l='ls -CF'
+alias ll='ls -alF'
+
+#java
+wget https://download.oracle.com/java/19/latest/jdk-19_linux-x64_bin.deb
