@@ -33,3 +33,17 @@ export PATH=$PATH:/home/silence/tomcat/apache-tomcat-10.0.27
 (then start startup.sh)
 access <ip>:8080 using web browser
 
+#proxy server
+systemctl start tinyproxy.service
+systemctl stop tinyproxy.service
+systemctl status tinyproxy.service
+
+#zfile
+mkdir zfile && cd zfile
+wget --no-check-certificate https://c.jun6.net/ZFILE/zfile-release.war
+unzip zfile-release.war && rm -rf zfile-release.war
+cd bin
+chmod +x ./*.sh
+./start.sh
+curl http://127.0.0.1:8080
+(config file:/WEB-INF/classes/application.properties)
