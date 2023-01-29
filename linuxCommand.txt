@@ -1,5 +1,6 @@
 #find
 find <dir> -name <partFileName>
+find -regex <FileName_regex>
 
 #grep
 grep
