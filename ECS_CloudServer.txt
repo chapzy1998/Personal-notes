@@ -47,3 +47,7 @@ chmod +x ./*.sh
 ./start.sh
 curl http://127.0.0.1:8080
 (config file:/WEB-INF/classes/application.properties)
+
+#speedtest
+apt install speedtest-cli
+speedtest
