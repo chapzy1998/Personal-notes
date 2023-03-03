@@ -30,6 +30,17 @@ java -version
 #dependency
 sudo apt install curl build-essential libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
 
+#python3.11
+mkdir python3.11
+weget
+tar -xzvf
+./configure --enable-optimizations
+su root
+make altinstall
+python3.11
+
+alias python='/usr/local/bin/python3.10'   (add to .bashrc to change default python version)
+
 #tomcat
 download tomcat10.tar.gz
 export PATH=$PATH:/home/silence/tomcat/apache-tomcat-10.0.27
