@@ -7,3 +7,6 @@ grep
 
 #kill
 kill -9 <pid>
+
+#restart ssh
+systemctl restart sshd
