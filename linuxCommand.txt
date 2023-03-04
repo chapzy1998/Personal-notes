@@ -4,3 +4,6 @@ find -regex <FileName_regex>
 
 #grep
 grep
+
+#kill
+kill -9 <pid>
