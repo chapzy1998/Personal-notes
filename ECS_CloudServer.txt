@@ -9,7 +9,11 @@ sudo usermod -aG sudo <username>
 dpkg-reconfigure locales (choose zh_CN.UTF-8 UTF-8)
 chmod 777 /home/<username>
 cp -r /etc/skel/. /home/<username>
-(then change .bashrc)
+(then change .bashrc)\
+
+#remove passwd check
+vim /etc/pam.d/common-passwd
+find the line like: password requisite pam_cracklib.so retry=3 minlen=10 difok=3 ucredit=-1 lcredit=-2 dcredit=-1 ocredit=-1
 
 #/etc/profile
 alias la='LS -a'
