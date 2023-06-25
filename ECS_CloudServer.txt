@@ -69,3 +69,9 @@ curl http://127.0.0.1:8080
 #speedtest
 apt install speedtest-cli
 speedtest
+
+#add 32bit frameware(for steamCMD if 64bit Linux)
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install lib32gcc1
+sudo apt install lib32stdc++6
