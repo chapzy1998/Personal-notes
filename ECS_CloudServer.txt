@@ -75,3 +75,8 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install lib32gcc1
 sudo apt install lib32stdc++6
+
+#github host
+github.com
+github.global.ssl.fastly.net
+raw.githubusercontent.com
