@@ -1,0 +1,9 @@
+小于等于Debian10
+sudo dpkg --add-architecture i386
+sudo apt install curl wget file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc1 lib32stdc++6 libicu-dev
+大于等于Debian11
+sudo dpkg --add-architecture i386
+sudo apt install curl wget file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc-s1 lib32stdc++6 libicu-dev
+
+wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh btserver
+./btserver install
