@@ -10,7 +10,3 @@ kill -9 <pid>
 
 #重启ssh
 systemctl restart sshd
-
-#查看窗口的进程id
-xprop
-然后左键点击窗口
