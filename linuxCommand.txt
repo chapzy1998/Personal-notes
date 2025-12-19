@@ -3,7 +3,7 @@ find <dir> -name <partFileName>
 find -regex <FileName_regex>
 
 #grep
-grep
+grep -r "content" ./
 
 #杀死进程
 kill -9 <pid>
