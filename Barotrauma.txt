@@ -7,3 +7,4 @@ sudo apt install curl wget file tar bzip2 gzip unzip bsdmainutils python3 util-l
 
 wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh btserver
 ./btserver install
+
